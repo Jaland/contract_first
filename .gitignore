@@ -44,4 +44,4 @@ nb-configuration.xml
 
 #Openapi
 .openapi-generator
-src/main/gen
+src/gen

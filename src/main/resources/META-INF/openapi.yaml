@@ -69,25 +69,6 @@ paths:
       x-tags:
       - tag: todo
     summary: Path used to manage the list of todos.
-  /example-endpoint:
-    description: "The REST endpoint/path used to get, update, and delete single instances\
-      \ of an `todo`.  This path contains `GET`, `PUT`, and `DELETE` operations used\
-      \ to perform the get, update, and delete tasks, respectively."
-    get:
-      description: Gets the details of a single instance of a `todo`.
-      operationId: getExampleMethod
-      responses:
-        "200":
-          description: Example response.
-        "404":
-          description: N/A
-      summary: Get a todo
-      tags:
-      - example
-      x-accepts: application/json
-      x-tags:
-      - tag: example
-    summary: Path used to manage a single todo.
   /todos/{todoId}:
     delete:
       description: Deletes an existing `todo`.
@@ -187,9 +168,6 @@ components:
       properties:
         id:
           type: integer
-          x-java-field-annotation:
-          - '@javax.persistence.Id'
-          - '@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)'
         name:
           type: string
         description:
@@ -202,5 +180,3 @@ components:
           type: boolean
       title: Todo
       type: object
-      x-java-class-annotation:
-      - '@javax.persistence.Entity'
