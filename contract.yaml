@@ -151,8 +151,7 @@ components:
             type: object
             properties:
                 id:
-                    format: uuid
-                    type: string
+                    type: integer
                 title:
                     type: string
                 description:

@@ -200,8 +200,7 @@ components:
         complete: false
       properties:
         id:
-          format: uuid
-          type: string
+          type: integer
         title:
           type: string
         description:
